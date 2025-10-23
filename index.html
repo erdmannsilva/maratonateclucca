@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Segurança Pública - Cidade Segura</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo Segurança Pública" />
+        <h1>Segurança Pública</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="#denuncia">Denúncia</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Sua segurança é nossa prioridade</h2>
+      <p>Informações, denúncias anônimas e prevenção para uma cidade mais segura.</p>
+      <a href="#denuncia" class="btn-primary">Fazer Denúncia</a>
+    </div>
+  </section>
+
+  <!-- Notícias -->
+  <section id="noticias" class="section">
+    <div class="container">
+      <h2>Notícias Recentes</h2>
+      <div class="noticias-grid">
+        <article class="noticia-card">
+          <img src="https://via.placeholder.com/300x200" alt="Notícia 1" />
+          <h3>Operação reduz roubos em 30%</h3>
+          <p>Ação integrada entre polícia e guarda municipal resulta em queda significativa.</p>
+          <a href="#">Leia mais</a>
+        </article>
+        <article class="noticia-card">
+          <img src="https://via.placeholder.com/300x200" alt="Notícia 2" />
+          <h3>Nova central de monitoramento 24h</h3>
+          <p>Câmeras inteligentes agora cobrem 80% do centro da cidade.</p>
+          <a href="#">Leia mais</a>
+        </article>
+        <article class="noticia-card">
+          <img src="https://via.placeholder.com/300x200" alt="Notícia 3" />
+          <h3>Campanha de conscientização nas escolas</h3>
+          <p>Projeto leva palestras sobre segurança para 15 mil alunos.</p>
+          <a href="#">Leia mais</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dicas de Segurança -->
+  <section id="dicas" class="section bg-light">
+    <div class="container">
+      <h2>Dicas de Segurança</h2>
+      <div class="dicas-grid">
+        <div class="dica-item">
+          <i class="fas fa-home"></i>
+          <h3>Em casa</h3>
+          <p>Use fechaduras reforçadas e instale alarmes.</p>
+        </div>
+        <div class="dica-item">
+          <i class="fas fa-car"></i>
+          <h3>No carro</h3>
+          <p>Nunca deixe objetos à vista. Estacione em locais iluminados.</p>
+        </div>
+        <div class="dica-item">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>No celular</h3>
+          <p>Evite usar o celular em locais movimentados.</p>
+        </div>
+        <div class="dica-item">
+          <i class="fas fa-users"></i>
+          <h3>Em grupo</h3>
+          <p>Prefira andar acompanhado à noite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Denúncia Anônima -->
+  <section id="denuncia" class="section">
+    <div class="container">
+      <h2>Denúncia Anônima</h2>
+      <p>Sua identidade será protegida. Ajude a tornar nossa cidade mais segura.</p>
+      <form class="form-denuncia">
+        <div class="form-group">
+          <label>Tipo de crime *</label>
+          <select required>
+            <option value="">Selecione</option>
+            <option>Roubo/Furto</option>
+            <option>Tráfico de Drogas</option>
+            <option>Violência Doméstica</option>
+            <option>Outros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Local do ocorrido *</label>
+          <input type="text" placeholder="Rua, bairro, ponto de referência" required />
+        </div>
+        <div class="form-group">
+          <label>Descrição *</label>
+          <textarea rows="5" placeholder="Descreva o que aconteceu..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Data e horário aproximado</label>
+          <input type="datetime-local" />
+        </div>
+        <button type="submit" class="btn-primary">Enviar Denúncia</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section bg-light">
+    <div class="container">
+      <h2>Contato</h2>
+      <div class="contato-grid">
+        <div>
+          <h3>Emergência</h3>
+          <p><strong>190</strong> - Polícia Militar</p>
+          <p><strong>193</strong> - Bombeiros</p>
+          <p><strong>180</strong> - Disque Denúncia</p>
+        </div>
+        <div>
+          <h3>Guarda Municipal</h3>
+          <p>Telefone: (00) 0000-0000</p>
+          <p>Email: guarda@seguranca.gov.br</p>
+        </div>
+        <div>
+          <h3>Endereço</h3>
+          <p>Rua da Segurança, 100<br>Centro - Cidade Segura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Segurança Pública. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
